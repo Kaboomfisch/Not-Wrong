@@ -120,9 +120,10 @@
         </div>
         <div class="button">
             <button onClick="random();">Next</button>
-        </div>
+     </div>
+        <div class="footer"><a>@MaurusAmstutzz</a></div>
     </div>
-    <div class="footer"><a>@MaurusAmstutz</a></div>
+    
     <script type="text/javascript">
 
         var i = 1

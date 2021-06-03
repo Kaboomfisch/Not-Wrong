@@ -107,7 +107,7 @@
 
     <div class="app">
         <div class="logo">
-            <img src="Assetination/not wrong.jpg">
+            <img src="Assetination/not wrong+.jpg">
         </div>
         <div class="title">
             <h3 id="peter"></h3>
@@ -115,13 +115,19 @@
         <div class="button">
             <br> </br>
             <br> </br>
+            <br> </br>
+            <br> </br>
+            <br> </br>
+            
             <button onClick="explain();">Erklärung</button>
 
         </div>
         <div class="button">
+            <br> </br>
+            <br> </br>
+            
             <button onClick="random();">Next</button>
         </div>
-        <div class="footer"><a>@MaurusAmstutzz</a></div>
     </div>
     
     <script type="text/javascript">
@@ -129,18 +135,25 @@
         var i = 1
         var explain01 = 'explain01.png'
         var explain02 = 'explain02.png'
-        var image3 = 'Assetination/zzz.jpg'
+        var explain03 = 'explain03.png'
+        var explain04 = 'explain04.png'
+        var explain05 = 'explain05.png'
+        var explain06 = 'explain06.png'
+        var explain07 = 'explain07.png'
+        var explain08 = 'explain08.png'
+        var explain09 = 'explain09.png'
+        var explain10 = 'explain10.png'
      
         var quote01 = "Wenn hinter Fliegen Fliegen fliegen, fliegen Fliegen Fliegen nach."
-        var quote02 = "That that is is. That that is not is not. Is that it? It is."
-        var quote03 = "Time flies like an arrow, fruit flies like a banana."
-        var quote04 = "The old man the boat."
+        var quote02 = "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo."
+        var quote03 = "The old man the boat."
+        var quote04 = "Time flies like an arrow, fruit flies like a banana."
         var quote05 = "The complex houses married and single soldiers and their families."
-        var quote06 = "English can be understood through tough thorough thought, though."
-        var quote07 = "Bismarck biss Mark, bis Mark Bismarck biss."
-        var quote08 = "The rat the cat the dog bit chased escaped."
-        var quote09 = ""
-        var quote10 = ""
+        var quote06 = "The rat the cat the dog bit chased escaped."
+        var quote07 = "That that is is. That that is not is not. Is that it? It is."
+        var quote08 = "This exceeding trifling witling, considering ranting criticizing concerning adopting fitting wording being exhibiting transcending learning, was displaying, notwithstanding ridiculing, surpassing boasting swelling reasoning, respecting correcting erring writing, and touching detecting deceiving arguing during debating."
+        var quote09 = "Bismarck biss Mark, bis Mark Bismarck biss."
+        var quote10 = "English can be understood through tough thorough thought, though."
 
         function random() {
             let j = i++
@@ -172,7 +185,13 @@
             else if (i == 9) {
                 document.getElementById("peter").innerHTML = quote08
             }
-            else if (i >= 10) {
+            else if (i == 10) {
+                document.getElementById("peter").innerHTML = quote09
+            }
+            else if (i == 11) {
+                document.getElementById("peter").innerHTML = quote10
+            }
+            else if (i >= 12) {
                 i = 1
                 random()
             }
@@ -188,22 +207,28 @@
                 document.body.style.backgroundImage = "url("+explain02+")"
             }
             else if (document.getElementById("peter").innerHTML == quote03) {
-                document.body.style.backgroundImage = "url("+explain02+")"
+                document.body.style.backgroundImage = "url("+explain03+")"
             }
             else if (document.getElementById("peter").innerHTML == quote04) {
-                document.body.style.backgroundImage = "url("+explain02+")"
+                document.body.style.backgroundImage = "url("+explain04+")"
             }
             else if (document.getElementById("peter").innerHTML == quote05) {
-                document.body.style.backgroundImage = "url("+explain02+")"
+                document.body.style.backgroundImage = "url("+explain05+")"
             }
             else if (document.getElementById("peter").innerHTML == quote06) {
-                document.body.style.backgroundImage = "url("+explain02+")"
+                document.body.style.backgroundImage = "url("+explain06+")"
             }
             else if (document.getElementById("peter").innerHTML == quote07) {
-                document.body.style.backgroundImage = "url("+explain02+")"
+                document.body.style.backgroundImage = "url("+explain07+")"
             }
             else if (document.getElementById("peter").innerHTML == quote08) {
-                document.body.style.backgroundImage = "url("+explain02+")"
+                document.body.style.backgroundImage = "url("+explain08+")"
+            }
+            else if (document.getElementById("peter").innerHTML == quote09) {
+                document.body.style.backgroundImage = "url("+explain09+")"
+            }
+            else if (document.getElementById("peter").innerHTML == quote10) {
+                document.body.style.backgroundImage = "url("+explain10+")"
             }
             
         }
@@ -211,6 +236,8 @@
     <script defer=""></script>
     </div>
     </div>
+    <div class="footer">
+        <a></a></div>
 </body>
 
 </html>

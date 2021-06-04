@@ -48,14 +48,16 @@
         h3 {
             font-size: 30px;
             margin: 50px;
-            height: 100px;
+            height: 120px;
         }
+
         h4 {
-            height: 80px;
+            height: 120px;
             margin-left: 5%;
             margin-right: 5%;
-            white-space:normal;
+            white-space: normal;
         }
+
         h5 {
             height: 15px;
             margin-left: 5%;
@@ -84,7 +86,7 @@
             margin: 5px;
 
         }
-        
+
 
         button:hover {
             background: white;
@@ -94,6 +96,7 @@
         .logo {
             height: 20%;
         }
+
         .title,
         .text,
         .button {
@@ -118,7 +121,11 @@
             color: rgb(0, 0, 0);
             height: 150px;
         }
-        
+
+        br {
+            line-height: 50%;
+            content: " ";
+        }
     </style>
 </head>
 
@@ -133,7 +140,7 @@
         </div>
         <a class="title">
             <h3 id="peter"></h3>
-            
+
         </a>
         <div>
             <h4 id="ex">
@@ -143,17 +150,17 @@
             <h5 id="bs3"></h5><br>
             <h5 id="bs4"></h5><br>
         </div>
-            <div class="button">
+        <div class="button">
             <button onClick="explain();">Erklärung</button>
             <button onClick="random();">Next</button>
         </div>
-        
-        
+
+
     </div>
-    
+
     <script type="text/javascript">
 
-    
+
 
         var i = 1
         var explain00 = ''
@@ -167,7 +174,7 @@
         var explain08 = 'Das im Englisch gebräuchliche „-ing“ Participle kann viele Rollen einnehmen und mit der korrekten Anwendung kann so ein Satz entstehen. Zu Deutsch (frei übersetzt): „Dieser sehr oberflächliche Witzbold, der annimmt, dass leere Kritik über die Adoption von sauberer Phraseologie grosse Gelehrsamkeit beweist, zeigte , trotz Gespott, ein angeberisches, angeschwollenes Argument über die Korrektur von falscher Sytanx und die Erkennung von falscher Logik in einer Debatte.“'
         var explain09 = 'Dieser Satz ist ein Wortspiel und Zungenbrecher. „Bismarck“, ein deutscher Name, hört sich an wie „biss Mark“ und „bis Mark“. Laut ausgesprochen hört es sich an, als ob man „Bismarck“ viereinhalbmal wiederholt.'
         var explain10 = 'Dieser Satz ist ein Wortspiel mit den englischen Wörtern mit „ough“. Diese Wörter gelten für Englischlernende besonders schwierig, da das „ough“ in jedem dieser Wörter anders ausgesprochen wird. Zu Deutsch: „Englisch kann allerdings durch hartnäckige und ausführliche Gedanken verstanden werden.“'
-     
+
         var beispiel000 = 'Weitere Beispiele:'
         var beispiel011 = '„Weichen Weichen weichen Weichen, weichen Weichen weichen Weichen.“'
         var beispiel012 = '„Selbst wer dort, wo alles verkehrt verkehrt, verkehrt verkehrt, verkehrt verkehrt und wird bestraft.“'
@@ -186,10 +193,10 @@
 
         var beispiel051 = '„The cotton clothing is made of grows in Mississippi.“'
         var beispiel052 = '„The man who hunts ducks out on weekends.“'
-        
+
         var beispiel061 = '„A man that a woman that a child that a bird that I heard saw knows loves.“'
         var beispiel062 = '„My brother opened the window the maid the janitor Uncle Bill had hired had married had closed.“'
-        
+
         var beispiel091 = '„Heissen Teigwaren Teigwaren, weil sie Teig waren?“'
         var beispiel092 = '„Heissen Rumkugeln Rumkugeln, weil sie rum kugeln?“'
         var beispiel093 = '„Selten ess ich Essig. Ess ich Essig, ess ich Essig mit Salat.“'
@@ -320,14 +327,15 @@
                 document.getElementById("bs3").innerHTML = beispiel102
                 document.getElementById("bs4").innerHTML = beispiel103
             }
-            
+
         }
     </script>
     <script defer=""></script>
     </div>
     </div>
     <div class="footer">
-        <a></a></div>
+        <a></a>
+    </div>
 </body>
 
 </html>

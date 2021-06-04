@@ -50,6 +50,21 @@
             margin: 50px;
             height: 120px;
         }
+        h4 {
+            height: 60px;
+            margin-left: 5%;
+            margin-right: 5%;
+            white-space:normal;
+        }
+        h5 {
+            height: 15px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            white-space: normal;
+            color: #383838;
+        }
 
         p {
             background: white;
@@ -103,6 +118,7 @@
             color: rgb(0, 0, 0);
             height: 150px;
         }
+        
     </style>
 </head>
 
@@ -117,9 +133,15 @@
         </div>
         <a class="title">
             <h3 id="peter"></h3>
+            
         </a>
         <div>
-            <img id="ex" src="explain00.png">
+            <h4 id="ex">
+            </h4> <br></br>
+            <h5 id="bs1"></h5><br>
+            <h5 id="bs2"></h5><br>
+            <h5 id="bs3"></h5><br>
+            <h5 id="bs4"></h5><br>
         </div>
             <div class="button">
             <button onClick="explain();">Erklärung</button>
@@ -134,18 +156,48 @@
     
 
         var i = 1
-        var explain00 = 'explain00.png'
-        var explain01 = 'explain01.png'
-        var explain02 = 'explain02.png'
-        var explain03 = 'explain03.png'
-        var explain04 = 'explain04.png'
-        var explain05 = 'explain05.png'
-        var explain06 = 'explain06.png'
-        var explain07 = 'explain07.png'
-        var explain08 = 'explain08.png'
-        var explain09 = 'explain09.png'
-        var explain10 = 'explain10.png'
+        var explain00 = ''
+        var explain01 = 'Auf Deutsch hat das Wort „fliegen“ mehrere Bedeutungen. Hier bedeutet es das Verb <fliegen> und die mehrzahl des Insekts „Fliege“. Dieser Zungenbrecher bedient sich an der Möglichkeit das „dann“ nach dem Komma auszulassen: „Wenn hinter Fliegen Fliegen fliegen, dann fliegen Fliegen Fliegen nach“'
+        var explain02 = 'Auf Englisch hat das Wort „Buffalo“ mehrere Bedeutungen. Hier bedeutet es das Tier „Buffalo“(dt. Büffel), die Stadt „Buffalo“ in New York und das Verb „buffalo“, (dt. täuschen, schikanieren). In der englischen Sprache kann man häufig Kommas auslassen. Ausserdem können viele Relativpronomen und -adverbien ausgelassen werden. Zu Deutsch: „Büffel aus Buffalo, die Büffel aus Buffalo schikanieren, schikanieren Büffel aus Buffalo“'
+        var explain03 = 'Auf den ersten Blick scheint es so, als würde diesem Satz ein Verb fehlen. Dies ist ein Beispiel eines Holzwegsatzes (engl. garden path sentence). Auf Englisch kann das Wort „man“ auch ein Verb sein, das auf Deutsch „bemannen“ oder „besetzen“ bedeutet. Zu Deutsch: „Die Alten bemannen das Boot“'
+        var explain04 = 'Der erste Teilsatz ist eine Metapher, während der zweite Teilsatz lediglich einen Fakt angibt. Im ersten Teilsatz dient „flies“ (dt. fliegt) als Verb und „like“ (dt. wie) wird als Vergleich gebraucht. Im zweiten Teilsatz dient „flies“ als Teil von „fruit flies“ (dt. Fruchtfliegen) als Subjekt und „like“ (dt. mögen) als Verb. Zu Deutsch: „Zeit verfliegt wie ein Pfeil, Fruchfliegen mögen eine Banane.“'
+        var explain05 = 'Ähnlich wie bei den vorherigen Beispielen enthält dieser Satz ein Verb, das man eher als Nomen kennt. Das Verb „house“ bedeutet auf Deutsch „beherbergen“. Das Verständnis des Satzes wird durch die „and“ und Aufzählungen noch erschwert. Zu Deutsch: „Der (Gebäude)Komplex beherbergt verheiratete und ledige Soldaten und ihre Familien.“'
+        var explain06 = 'Im Englischen gibt es theoretisch kein Limit wie viele Relativsätze man in einen Satz einfügen kann, solange es ein begleitendes Subjekt gibt. Je mehr Relativsätze es werden, desto unübersichtlicher und ineffizenter wird der Satz. In Englisch nennt man das „ineffective (center) embedding“. „Der Hund biss die Katze. Welche Katze? Die, die die Ratte verfolgte. Welche Ratte? Die, die entkam.“ Also: „Die Ratte, die die Katze, die der Hund biss, verfolgte, entkam“'
+        var explain07 = 'Ein paar Anführungszeichen und Kommas machen den Ausdruck schon einmal verständlicher: „That, that is“ is. „That, that is not“ is not. Is that it? It is. Indem Sätze als Subjekte und abstrakte Wörter wie „That“ benutzt werden, wirkt der Ausdruck wie ein philosophisches Wortspiel. Zu Deutsch: „Das, was ist, ist. Das, was nicht ist, ist nicht. Ist es das? Es ist.“ Ändert man die Satzzeichen kann der Ausdruck bis zu vier unterschiedliche Bedeutungen annehmen.'
+        var explain08 = 'Das im Englisch gebräuchliche „-ing“ Participle kann viele Rollen einnehmen und mit der korrekten Anwendung kann so ein Satz entstehen. Zu Deutsch (frei übersetzt): „Dieser sehr oberflächliche Witzbold, der annimmt, dass leere Kritik über die Adoption von sauberer Phraseologie grosse Gelehrsamkeit beweist, zeigte , trotz Gespott, ein angeberisches, angeschwollenes Argument über die Korrektur von falscher Sytanx und die Erkennung von falscher Logik in einer Debatte.“'
+        var explain09 = 'Dieser Satz ist ein Wortspiel und Zungenbrecher. „Bismarck“, ein deutscher Name, hört sich an wie „biss Mark“ und „bis Mark“. Laut ausgesprochen hört es sich an, als ob man „Bismarck“ viereinhalbmal wiederholt.'
+        var explain10 = 'Dieser Satz ist ein Wortspiel mit den englischen Wörtern mit „ough“. Diese Wörter gelten für Englischlernende besonders schwierig, da das „ough“ in jedem dieser Wörter anders ausgesprochen wird. Zu Deutsch: „Englisch kann allerdings durch hartnäckige und ausführliche Gedanken verstanden werden.“'
      
+        var beispiel000 = 'Weitere Beispiele:'
+        var beispiel011 = '„Weichen Weichen weichen Weichen, weichen Weichen weichen Weichen.“'
+        var beispiel012 = '„Selbst wer dort, wo alles verkehrt verkehrt, verkehrt verkehrt, verkehrt verkehrt und wird bestraft.“'
+        var beispiel013 = '„Wenn vor Robben Robben robben, robben Robben Robben nach.“'
+
+        var beispiel021 = '„Police police Police police police police Police police.“'
+        var beispiel022 = '„Will, will Will will Will Will`s will?“'
+        var beispiel023 = '„James while John had had had had had had had had had had had a better effect on the teacher.“'
+
+        var beispiel031 = '„The horse raced past the barn fell.“'
+        var beispiel032 = '„The prime number few.“'
+        var beispiel033 = '„Fat people eat accumulates.“'
+
+        var beispiel041 = 'Your argument is sound, nothing but sound.“'
+        var beispiel042 = '„If you aren`t fired with enthusiasm, you will be fired with enthusiasm.“'
+
+        var beispiel051 = '„The cotton clothing is made of grows in Mississippi.“'
+        var beispiel052 = '„The man who hunts ducks out on weekends.“'
+        
+        var beispiel061 = '„A man that a woman that a child that a bird that I heard saw knows loves.“'
+        var beispiel062 = '„My brother opened the window the maid the janitor Uncle Bill had hired had married had closed.“'
+        
+        var beispiel091 = '„Heissen Teigwaren Teigwaren, weil sie Teig waren?“'
+        var beispiel092 = '„Heissen Rumkugeln Rumkugeln, weil sie rum kugeln?“'
+        var beispiel083 = '„Selten ess ich Essig. Ess ich Essig, ess ich Essig mit Salat.“'
+
+        var beispiel101 = '„How much wood would a woodchuck chuck if a woodchuck could chuck wood?“'
+        var beispiel102 = '„The sixth shiek`s sixth sheep`s sick.“'
+        var beispiel103 = 'Three witches watch three swatch watches. Which witch watches which Swatch watch?'
+
         var quote01 = "Wenn hinter Fliegen Fliegen fliegen, fliegen Fliegen Fliegen nach."
         var quote02 = "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo."
         var quote03 = "The old man the boat."
@@ -160,7 +212,11 @@
         function random() {
             let j = i++
 
-            document.getElementById("ex").src = explain00
+            document.getElementById("ex").innerHTML = explain00
+            document.getElementById("bs1").innerHTML = ''
+            document.getElementById("bs2").innerHTML = ''
+            document.getElementById("bs3").innerHTML = ''
+            document.getElementById("bs4").innerHTML = ''
 
             if (i == 2) {
                 document.getElementById("peter").innerHTML = quote01
@@ -203,34 +259,66 @@
 
         function explain() {
             if (document.getElementById("peter").innerHTML == quote01) {
-                document.getElementById("ex").src = explain01
+                document.getElementById("ex").innerHTML = explain01
+                document.getElementById("bs1").innerHTML = beispiel000
+                document.getElementById("bs2").innerHTML = beispiel011
+                document.getElementById("bs3").innerHTML = beispiel012
+                document.getElementById("bs4").innerHTML = beispiel013
             }
             else if (document.getElementById("peter").innerHTML == quote02) {
-                document.getElementById("ex").src = explain02
+                document.getElementById("ex").innerHTML = explain02
+                document.getElementById("bs1").innerHTML = beispiel000
+                document.getElementById("bs2").innerHTML = beispiel021
+                document.getElementById("bs3").innerHTML = beispiel022
+                document.getElementById("bs4").innerHTML = beispiel023
             }
             else if (document.getElementById("peter").innerHTML == quote03) {
-                document.getElementById("ex").src = explain03
+                document.getElementById("ex").innerHTML = explain03
+                document.getElementById("bs1").innerHTML = beispiel000
+                document.getElementById("bs2").innerHTML = beispiel031
+                document.getElementById("bs3").innerHTML = beispiel032
+                document.getElementById("bs4").innerHTML = beispiel033
             }
             else if (document.getElementById("peter").innerHTML == quote04) {
-                document.getElementById("ex").src = explain04
+                document.getElementById("ex").innerHTML = explain04
+                document.getElementById("bs1").innerHTML = beispiel000
+                document.getElementById("bs2").innerHTML = beispiel041
+                document.getElementById("bs3").innerHTML = beispiel042
+                document.getElementById("bs4").innerHTML = beispiel043
             }
             else if (document.getElementById("peter").innerHTML == quote05) {
-                document.getElementById("ex").src = explain05
+                document.getElementById("ex").innerHTML = explain05
+                document.getElementById("bs1").innerHTML = beispiel000
+                document.getElementById("bs2").innerHTML = beispiel051
+                document.getElementById("bs3").innerHTML = beispiel052
+                document.getElementById("bs4").innerHTML = beispiel033
             }
             else if (document.getElementById("peter").innerHTML == quote06) {
-                document.getElementById("ex").src = explain06
+                document.getElementById("ex").innerHTML = explain06
+                document.getElementById("bs1").innerHTML = beispiel000
+                document.getElementById("bs2").innerHTML = beispiel061
+                document.getElementById("bs3").innerHTML = beispiel062
+                document.getElementById("bs4").innerHTML = beispiel063
             }
             else if (document.getElementById("peter").innerHTML == quote07) {
-                document.getElementById("ex").src = explain07
+                document.getElementById("ex").innerHTML = explain07
             }
             else if (document.getElementById("peter").innerHTML == quote08) {
-                document.getElementById("ex").src = explain08
+                document.getElementById("ex").innerHTML = explain08
             }
             else if (document.getElementById("peter").innerHTML == quote09) {
-                document.getElementById("ex").src = explain09
+                document.getElementById("ex").innerHTML = explain09
+                document.getElementById("bs1").innerHTML = beispiel000
+                document.getElementById("bs2").innerHTML = beispiel091
+                document.getElementById("bs3").innerHTML = beispiel092
+                document.getElementById("bs4").innerHTML = beispiel093
             }
             else if (document.getElementById("peter").innerHTML == quote10) {
-                document.getElementById("ex").src = explain10
+                document.getElementById("ex").innerHTML = explain10
+                document.getElementById("bs1").innerHTML = beispiel000
+                document.getElementById("bs2").innerHTML = beispiel101
+                document.getElementById("bs3").innerHTML = beispiel102
+                document.getElementById("bs4").innerHTML = beispiel103
             }
             
         }

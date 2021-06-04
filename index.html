@@ -40,14 +40,15 @@
 
         img {
             padding: 10px;
-            max-width: 85%;
-            max-height: 85%;
+            max-width: 100%;
+            max-height: 120%;
 
         }
 
         h3 {
             font-size: 30px;
             margin: 50px;
+            height: 120px;
         }
 
         p {
@@ -64,6 +65,8 @@
             border: none;
             transition: 100ms;
             outline: none;
+            height: 50px;
+            margin: 5px;
 
         }
         
@@ -73,11 +76,13 @@
             color: black;
         }
 
-        .logo,
+        .logo {
+            height: 20%;
+        }
         .title,
         .text,
         .button {
-            height: 25%;
+            height: 40%;
         }
 
         .footer {
@@ -95,7 +100,8 @@
 
         a {
             text-decoration: none;
-            color: white;
+            color: rgb(0, 0, 0);
+            height: 150px;
         }
     </style>
 </head>
@@ -109,30 +115,24 @@
         <div class="logo">
             <img src="Assetination/not wrong+.jpg">
         </div>
-        <div class="title">
+        <a class="title">
             <h3 id="peter"></h3>
+        </a>
+        <div>
+            <img id="ex" src="explain00.png">
         </div>
-        <div class="button">
-            <br> </br>
-            <br> </br>
-            <br> </br>
-            <br> </br>
-            <br> </br>
-            
+            <div class="button">
             <button onClick="explain();">Erklärung</button>
-
-        </div>
-        <div class="button">
-            <br> </br>
-            <br> </br>
-            
             <button onClick="random();">Next</button>
         </div>
+        
+        
     </div>
     
     <script type="text/javascript">
 
         var i = 1
+        var explain00 = 'explain00.png'
         var explain01 = 'explain01.png'
         var explain02 = 'explain02.png'
         var explain03 = 'explain03.png'
@@ -158,7 +158,7 @@
         function random() {
             let j = i++
 
-            document.body.style.backgroundImage = ""
+            document.getElementById("ex").src = explain00
 
             if (i == 2) {
                 document.getElementById("peter").innerHTML = quote01
@@ -201,34 +201,34 @@
 
         function explain() {
             if (document.getElementById("peter").innerHTML == quote01) {
-                document.body.style.backgroundImage = "url("+explain01+")"
+                document.getElementById("ex").src = explain01
             }
             else if (document.getElementById("peter").innerHTML == quote02) {
-                document.body.style.backgroundImage = "url("+explain02+")"
+                document.getElementById("ex").src = explain02
             }
             else if (document.getElementById("peter").innerHTML == quote03) {
-                document.body.style.backgroundImage = "url("+explain03+")"
+                document.getElementById("ex").src = explain03
             }
             else if (document.getElementById("peter").innerHTML == quote04) {
-                document.body.style.backgroundImage = "url("+explain04+")"
+                document.getElementById("ex").src = explain04
             }
             else if (document.getElementById("peter").innerHTML == quote05) {
-                document.body.style.backgroundImage = "url("+explain05+")"
+                document.getElementById("ex").src = explain05
             }
             else if (document.getElementById("peter").innerHTML == quote06) {
-                document.body.style.backgroundImage = "url("+explain06+")"
+                document.getElementById("ex").src = explain06
             }
             else if (document.getElementById("peter").innerHTML == quote07) {
-                document.body.style.backgroundImage = "url("+explain07+")"
+                document.getElementById("ex").src = explain07
             }
             else if (document.getElementById("peter").innerHTML == quote08) {
-                document.body.style.backgroundImage = "url("+explain08+")"
+                document.getElementById("ex").src = explain08
             }
             else if (document.getElementById("peter").innerHTML == quote09) {
-                document.body.style.backgroundImage = "url("+explain09+")"
+                document.getElementById("ex").src = explain09
             }
             else if (document.getElementById("peter").innerHTML == quote10) {
-                document.body.style.backgroundImage = "url("+explain10+")"
+                document.getElementById("ex").src = explain10
             }
             
         }
